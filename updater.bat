@@ -1,6 +1,6 @@
 @echo off
 cd C:\projectpinefolder
-echo There is a new update!
+echo There is a new update for crystal pines!
 echo Close out of this program if you dont want to update,or press any key to continue.
 timeout 120
 echo Starting update.

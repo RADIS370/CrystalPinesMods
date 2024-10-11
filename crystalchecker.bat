@@ -2,7 +2,7 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 IF "%STARTED%"=="" SET STARTED=0
 IF "%started%"=="0" (
    SET STARTED=1
-   powershell -ExecutionPolicy Bypass -command "Start-Process C:\crystalcheck.bat -WindowStyle Hidden"
+   powershell -ExecutionPolicy Bypass -command "Start-Process "C:\projectpinefolder\crystalchecker.bat" -WindowStyle Hidden"
    exit
   ) ELSE (
   goto ok
@@ -17,7 +17,7 @@ curl -LJO --insecure https://github.com/RADIS370/CrystalPinesMods/raw/main/verd.
 set /p ver=< ver.txt
 set /p verd=< verd.txt
 if %verd% GTR %ver% (
-start update.bat
+start updater.bat
 timeout 600
 goto ok
 )
